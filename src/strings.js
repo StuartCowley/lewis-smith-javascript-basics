@@ -1,6 +1,6 @@
-function sayHello (string) {
-  // your code here
-};
+function sayHello(string) {
+  return 'Hello, world!';
+}
 
 function uppercase (string) {
   // your code here
