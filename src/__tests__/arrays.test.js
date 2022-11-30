@@ -59,7 +59,7 @@ describe('addToArray', () => {
 });
 
 describe('addToArray2', () => {
-  xit('returns a new array with the value appended', () => {
+  it('returns a new array with the value appended', () => {
     const array = ['a', 'b', 'c'];
     const array2 = [1, 2, 3];
 
@@ -72,7 +72,7 @@ describe('addToArray2', () => {
 });
 
 describe('removeNthElement', () => {
-  xit('removes the element at position n', () => {
+  it('removes the element at position n', () => {
     const array = ['ant', 'bison', 'cockerel', 'duck', 'elephant'];
     removeNthElement(2, array);
     expect(array).toEqual(['ant', 'bison', 'duck', 'elephant']);
@@ -91,7 +91,7 @@ describe('numbersToStrings', () => {
 });
 
 describe('uppercaseWordsInArray', () => {
-  xit('makes every string in the array uppercase', () => {
+  it('makes every string in the array uppercase', () => {
     expect(uppercaseWordsInArray(['cat', 'mouse', 'banana'])).toEqual([
       'CAT',
       'MOUSE',
@@ -106,7 +106,7 @@ describe('uppercaseWordsInArray', () => {
 });
 
 describe('reverseWordsInArray', () => {
-  xit('reverses every string in an array', () => {
+  it('reverses every string in an array', () => {
     expect(reverseWordsInArray(['cat', 'Mouse', 'banana'])).toEqual([
       'tac',
       'esuoM',
@@ -121,7 +121,7 @@ describe('reverseWordsInArray', () => {
 });
 
 describe('onlyEven', () => {
-  xit('filters the array and only returns even numbers', () => {
+  it('filters the array and only returns even numbers', () => {
     expect(onlyEven([1, 2, 3, 4, 5, 6, 7, 8])).toEqual([2, 4, 6, 8]);
     expect(onlyEven([8, 9, 10, 11, 12, 13, 14, 15])).toEqual([8, 10, 12, 14]);
   });
@@ -139,7 +139,7 @@ describe('removeNthElement2', () => {
 });
 
 describe('elementsStartingWithAVowel', () => {
-  xit('returns elements starting with a vowel', () => {
+  it('returns elements starting with a vowel', () => {
     expect(
       elementsStartingWithAVowel([
         'apple',
@@ -179,7 +179,7 @@ describe('elementsStartingWithAVowel', () => {
     ).toEqual(['aaaa', 'eeee']);
   });
 
-  xit('is case insensitive', () => {
+  it('is case insensitive', () => {
     expect(
       elementsStartingWithAVowel([
         'Apple',
@@ -221,7 +221,7 @@ describe('elementsStartingWithAVowel', () => {
 });
 
 describe('removeSpaces', () => {
-  xit('returns the string with the space characters removed', () => {
+  it('returns the string with the space characters removed', () => {
     expect(removeSpaces('this string has spaces')).toEqual(
       'thisstringhasspaces'
     );
@@ -232,14 +232,14 @@ describe('removeSpaces', () => {
 });
 
 describe('sumNumbers', () => {
-  xit('returns the sum of the numbers in the array', () => {
+  it('returns the sum of the numbers in the array', () => {
     expect(sumNumbers([1, 3, 5, 6, 2, 8])).toEqual(25);
     expect(sumNumbers([1, 3, 5])).toEqual(9);
   });
 });
 
 describe('sortByLastLetter', () => {
-  xit('sorts the string by the last character', () => {
+  it('sorts the string by the last character', () => {
     expect(
       sortByLastLetter(['Lannister', 'Stark', 'Greyjoy', 'Targaryen'])
     ).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']);
