@@ -1,5 +1,11 @@
 const getNthElement = (index, array) => {
-  return array[index];
+  if (index < array.length){
+    return array[index];
+  }
+  return array[index - array.length];
+  // const cycleIndex = 
+  // index < array.length ? index : index - array.length;
+  // return array[cycleIndex];
 };
 
 const arrayToCSVString = array => {
@@ -63,14 +69,24 @@ const onlyEven = numbers => {
 //assigned to an additional variable.
 
 const removeNthElement2 = (index, array) => {
-  return array.map(arr => {
-    return arr.splice(index, 1);
+  return array.filter((_, indexRem) => {
+    return indexRem !== index;
   });
 };
 
-const elementsStartingWithAVowel = strings => {
-  return strings.filter(str => /^[aeiou]/i.test(str));
-};
+// const elementsStartingWithAVowel = strings => {
+//   return strings.filter(str => /^[aeiou]/i.test(str));
+// };
+
+// const elementsStartingWithAVowel = (strings) => {
+//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+//   return strings.filter(word => {
+//     const firstLetter = word[0].toLowerCase();
+    
+//     return vowels.includes(firstLetter);
+//   });
+// };
 
 // let array = ["ananas", "banana", "kiwi"];
 // array.filter(str => /^[aeiou]/i.test(str));
