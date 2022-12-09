@@ -136,7 +136,7 @@ describe('isSquare', () => {
 });
 
 describe('startsWith', () => {
-  xit('returns whether the given string starts with the given character', () => {
+  it('returns whether the given string starts with the given character', () => {
     expect(startsWith('a', 'aardvark')).toBe(true);
     expect(startsWith('c', 'aardvark')).toBe(false);
     expect(startsWith('b', 'baardvark')).toBe(true);
@@ -146,7 +146,7 @@ describe('startsWith', () => {
 });
 
 describe('containsVowels', () => {
-  xit('returns whether the given string contains vowels', () => {
+  it('returns whether the given string contains vowels', () => {
     expect(containsVowels('cat')).toBe(true);
     expect(containsVowels('DOG')).toBe(true);
     expect(containsVowels('why')).toBe(false);
@@ -154,7 +154,7 @@ describe('containsVowels', () => {
 });
 
 describe('isLowerCase', () => {
-  xit('it returns true if the given string is lowercase', () => {
+  it('it returns true if the given string is lowercase', () => {
     expect(isLowerCase('abc')).toBe(true);
     expect(isLowerCase('abc213')).toBe(true);
     expect(isLowerCase('Abc')).toBe(false);

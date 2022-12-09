@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 function negate(a) {
   return !a;
 };
@@ -47,16 +48,23 @@ function isSquare(a) {
 };
 
 function startsWith(char, string) {
-  // your code here
+  return string.startsWith(char);
 };
 
 function containsVowels(string) {
-  // your code here
+  const vowelRegex = /[aeiou]/i;
+  return vowelRegex.test(string);
 };
 
 function isLowerCase(string) {
-  // your code here
+  const vowelRegex = /[A-Z]/.test(string);
+  const lowerVowelRegex = /[a-z]/.test(string);
+  if (lowerVowelRegex && !vowelRegex) {
+    return true;
+  } return false;
 };
+
+
 
 module.exports = {
   negate,

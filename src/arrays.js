@@ -1,3 +1,5 @@
+/* eslint-disable spaced-comment */
+/* eslint-disable prettier/prettier */
 const getNthElement = (index, array) => {
   if (index < array.length){
     return array[index];
@@ -44,6 +46,7 @@ const numbersToStrings = numbers => {
 const uppercaseWordsInArray = strings => {
   
   const convertedNames = [];
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < strings.length; i++) {
     convertedNames[i] = strings[i].toUpperCase();
   };
@@ -78,15 +81,15 @@ const removeNthElement2 = (index, array) => {
 //   return strings.filter(str => /^[aeiou]/i.test(str));
 // };
 
-// const elementsStartingWithAVowel = (strings) => {
-//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+const elementsStartingWithAVowel = (strings) => {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
 
-//   return strings.filter(word => {
-//     const firstLetter = word[0].toLowerCase();
+  return strings.filter(word => {
+    const firstLetter = word[0].toLowerCase();
     
-//     return vowels.includes(firstLetter);
-//   });
-// };
+    return vowels.includes(firstLetter);
+  });
+};
 
 // let array = ["ananas", "banana", "kiwi"];
 // array.filter(str => /^[aeiou]/i.test(str));
